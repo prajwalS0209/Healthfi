@@ -1,0 +1,51 @@
+//HEADER SECTION
+
+// Navbar section 
+
+
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+
+    &_brand{
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-left: 1rem;
+
+        &:hover{
+            cursor: pointer;
+            transition: 0.5s ;
+        }
+    }
+
+    &_items{
+        display: flex;   
+    }
+
+    &_links{
+        padding:0px 1rem;
+        text-transform: capitalize;
+
+        &:hover{
+            color:$color-button;
+            cursor: pointer;
+        }
+    }
+
+    &_buttons{
+        display: flex;
+        justify-items: end;
+        margin-right: 12px;
+    }
+ 
+    &_btn{
+       @include classicbutton-1;
+       margin-right: 5px;
+    }
+}

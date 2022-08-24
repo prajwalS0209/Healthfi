@@ -1,0 +1,667 @@
+// MAIN SECTION
+
+
+// header main section
+
+.header_section{
+    position: relative;
+
+
+.main_section{
+    height: 1150px;
+    width: 60%;
+    border-radius: 0px 0rem 2rem 0px;
+    background: $color-button;
+    
+
+    &_text{
+        background-color: $bg-color2;
+        width: 45%;
+        height: 35%;
+        padding: 5rem  3rem;
+        color: white;
+        border-radius: 2rem;
+        position: absolute;
+        z-index: 100;
+        top: 8rem;
+        left: 5rem;
+        
+        &_heading{
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-style: normal;
+            letter-spacing: 3px;
+        }
+
+        &_para{
+            text-transform: capitalize;
+            font-size: 4rem;  
+            font-weight: bold;
+            padding-top: 2rem;
+        }
+
+            &_btn{
+                @include classicbutton-2;
+                margin-top: 1.8rem;
+                
+        }
+    }
+
+        &_image{
+        position: absolute;    
+        top: 18rem;
+        right: 5rem;
+        border-radius: 2rem;
+        max-width: 100%;
+        height: 60%;
+
+        }
+    }
+}
+
+
+// card section
+ 
+.card_section{
+    position: absolute;
+    display: flex;
+    margin: 0px auto;
+    bottom: 2rem;
+    justify-content: center;
+    
+    
+
+    .card{
+        width: 20%;
+        background-color: $text-color;
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        box-shadow: 0px 0px 1rem 0px  rgb(92, 90, 90);
+
+        h2{
+            font-size: larger;
+            text-transform: capitalize;
+            margin: 2rem 0px;
+            color: $bg-color2;
+        }
+    }
+
+    &_image{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .para{
+        line-height: 2rem;
+        font-style: italic;
+        font-size: medium;
+    }
+
+}
+
+//hero section
+
+.hero_section {
+    margin-top: 9rem; 
+    position: relative;  
+    height: 900px;
+
+    .hero_section_img{
+        height: 550px;
+        width: 1030px;
+        display: block;
+        margin: 0px auto;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    .hero_section_left{
+        position: absolute;
+        bottom: 90px;
+        left: 150px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color:$color-button ;
+        width: 450px;
+        height: 380px;
+        padding-top: 12px;
+        color:$text-color ;
+        padding: 0px 12px;
+        border-radius: 2rem;
+
+        h2{
+        font-size: 35px;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        }
+
+        p{
+            line-height: 30px;
+            font-style: italic;
+        }
+
+    }
+    &_right{
+        background-color: $bg-color2;
+        position: absolute;
+        right: 0px;
+        top: 300px;
+        width: 75%;
+        height: 1450px;
+        z-index: -100;
+        border-radius: 0px 0px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        ul{
+            margin-right: -280px;
+            margin-top: -480px;
+            z-index: 10;
+        }
+        
+        li{
+            color: $text-color;
+            line-height: 40px;
+            font-weight: lighter;
+            font-size: 25px;
+            font-style: italic
+            
+        }
+
+        .fa-solid{
+            color: $color-button;
+            margin-right: 12px;
+        }
+
+        button{
+            @include classicbutton-2;
+            margin-top: 12px;
+            z-index:-100;
+            
+        }
+    }
+ }
+
+ //second hero section
+
+.second_section{
+    position: relative;
+
+
+ .second_main_section{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+
+    &_img{
+        width: 50vw;
+        border-radius: 20px;
+        
+    }
+
+    &_div{
+        width: 600px;
+        height: 550px;
+        background-color: $color-button;
+        border-radius: 20px;
+        position: absolute;
+        left: 200px;
+        top: 100px;
+        z-index: -1;
+    }
+
+    &_whitediv{
+        width: 600px;
+        height: 400px;
+        background-color: $text-color;
+        border-radius: 50px;
+        position: absolute;
+        align-items: center;
+        left: 550px;
+        top:  200px;
+        z-index: 100;
+        padding: 50px;
+        box-shadow: 0px 0px 12px rgb(92, 90, 90);
+
+        h2{
+            font-size: 35px;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        p{
+            line-height: 30px;
+            font-style: italic;
+            text-align: start;
+            font-size: 20px;
+        }
+
+        button{
+            @include classicbutton-2;
+            margin-top:20px;
+        }
+    }
+  }
+}
+
+
+// weight loos section
+
+.weight_section{
+    margin-top: 950px; 
+    //messed with previous div css so its just for adjusting it
+    justify-content: center;
+
+    
+    &_1{
+        background-color: $color-button;
+        border-radius: 12px;
+        height: 550px;
+        width: 250px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left:12px ;
+        padding-right: 12px;
+        
+    
+
+        p{
+            color: $text-color;
+            letter-spacing: 2px;
+            line-height: 25px;
+
+        }
+    
+    }
+    &_2{
+        background-color: transparent;
+        padding-left: 20px;
+
+        h2{
+            font-size: 55px;
+            text-transform: capitalize;
+            color: $bg-color2;
+        }
+
+        p{
+            line-height: 32px;
+            margin: 20px 0px;
+        }
+    }
+    &_image{
+        width: 60px;
+        height: 60px;
+    }
+
+    .anime{
+        padding-left :30px;
+        padding-top: 12px;
+        justify-content: space-between;
+    }
+    &_3{
+        background-color: $bg-color2;
+        border-radius: 12px;
+        padding: 20px;
+        height: 305px;
+        width: 400px;
+        text-align: start;
+        color: $text-color;
+       
+        h1{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 20px 0px;
+        }
+
+        p{
+            line-height: 30px;
+        }
+
+
+    }
+    &_4{
+        background-color: $text-color;
+        border-radius: 12px;
+       padding: 20px;
+        height: 305px;
+        width: 400px;
+        margin-left: 20px;
+
+        h2{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 20px 0px;
+        }
+
+        p{
+            line-height: 30px;
+        }
+
+    }
+}
+
+//work out section
+
+.workout_section{
+    position: relative;
+    margin-top: 200px;
+    border-radius: 0px 0px 20px 0px;
+    height: 500px;
+    width: 90vw;
+    background-color: $bg-color2;
+
+    &_img{
+        position: absolute;
+        top:  -120px;
+        left: 50px;
+        z-index: 100;   
+        border-radius:20px;
+        width: 500px;
+    }
+ 
+    &_div{
+        background-color: $color-button;
+        width: 500px;
+        height: 600px;
+        border-radius: 0px 0px 20px 0px;
+    }
+
+    &_list{
+         width: 500px;
+         position: absolute;
+         right: 0px;
+         margin-top: 50px;
+
+        h2{
+            color: $text-color;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            font-size: 35px;
+            line-height: 50px;
+        }
+
+         li{
+            padding-top: 5px;
+            list-style: disc;
+            color: $text-color;
+            text-transform: capitalize;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 40px;
+         }
+       
+    }
+    
+}
+
+// weight loss challenge
+
+.challenge{
+    background-color: $bg-color2;
+    margin-top: 500px;
+    height: 700px;
+    width: 100vw;
+    position: relative;
+
+    &_part1{
+        background-color: $color-button;
+        width: 450px;
+        height: 1000px;
+        border-radius: 20px;
+        position: absolute;
+        left: 400px;
+        bottom: 0px;
+        color: $text-color;
+        text-align: center;
+        
+        h2{
+            text-transform: capitalize;
+            font-size: 50px;
+            line-height: 60px;
+            margin-top: 30px;
+        }
+
+        p{
+           padding: 30px;
+           line-height: 40px;
+           font-size: 20px;
+           letter-spacing: 2px;
+        }
+    
+        img{
+            border-radius: 10%;
+            width: 400px;
+            height: 320px;
+        }
+        
+        button{
+            @include classicbutton-2;
+            margin-top: 30px;
+            background-color:$bg-color2;
+        }
+    }
+}
+    
+
+//diet section
+
+.diet_plan{
+    background-color: $bg-color2;
+    height: 400px;
+    width: 100vw;
+    position: relative;
+
+    img{
+        border-radius: 20px;
+        position: absolute;
+        margin-left: 70px;
+        top: 240px;
+        left: 90px;
+        z-index: 100;
+        
+        height: 600px;
+    }
+    &_div{
+        background-color: $color-button;
+        position: absolute;
+        right: 60px;
+        top:160px;
+        border-radius: 20px;
+        width: 300px;
+        height: 900px;
+    }
+
+    &_div2{
+        background-color: $text-color;
+        position: absolute;
+        bottom: -700px;
+        left: 50px;
+        z-index: 100;
+        border-radius: 20px;
+        width: 600px;
+        height: 400px;
+        box-shadow: 0px 0px 19px 0px rgb(92, 90, 90);
+        text-align: start;
+        padding: 70px 30px;
+
+        h2{
+            text-transform: uppercase;
+            margin-left: 5px;
+            margin-bottom: 12px;
+            font-size: x-large;
+            font-style: normal;
+            letter-spacing: 5px;
+            
+        }
+
+        p{
+            font-size: 70px; 
+            text-transform: capitalize;
+            color: $bg-color2;
+        }
+    }
+}
+
+//form section
+
+.form_section{
+  margin-top: 1200px;
+  width: 100vw;
+  height:300px;
+  background-color: $color-button;
+  position: relative;
+
+
+  .form{
+    position: absolute;
+    left: 110px;
+    background-color: $text-color;
+    height: 600px;
+    width: 80%;
+    margin: 0px auto;
+    bottom: 50px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly; 
+
+    .top{
+        h2{
+            text-transform: capitalize;
+            color: $color-button;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+        
+        h3{
+            font-size: 20px;
+            font-weight: lighter;
+            color: $color-button;
+        }
+        h1{
+            text-transform: capitalize;
+            margin-top: 10px;
+            color: $bg-color2;
+            font-size: 40px;
+            letter-spacing: 2px; 
+        }
+
+
+        p{
+            text-align: start;
+            line-height: 30px;
+            margin-top: 23px;
+            font-size: 20px;
+            color: rgb(129, 123, 123);
+        }
+    }
+
+    &_left{
+        padding-top: 42px;
+    }
+    .bottom{
+        margin-top: 70px;
+        
+
+
+        ul{
+            display: flex;
+          
+
+            li{
+                color: $text-color;
+                background-color: $color-button;
+                cursor: pointer;  
+                margin-right: 20px;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                &:hover{
+                    color: $color-button;
+                    background-color: $text-color;
+                    transition: 0.5s all ease ;
+                }
+
+            }
+
+        }
+
+        h2{
+            text-transform: capitalize;
+            color: $bg-color2;
+            font-size: 40px;
+            letter-spacing: 2px; 
+            margin-bottom: 20px;
+        }
+
+        h4{
+            margin: 30px 0px;
+            text-align: start;
+            line-height: 30px;
+            margin-top: 23px;
+            font-size: 20px;
+            color: rgb(129, 123, 123);
+        }
+    }
+
+    &_right{
+
+        padding:42px 0px;
+        
+
+        h2{
+            text-transform: capitalize;
+            color: $color-button;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+    }
+
+    }
+  }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+
+
+    input{
+        border:2px solid black;
+        border-bottom-color: black;
+        padding:20px 10px;
+        font-size: 20px;
+        border-top: black;
+        border-left: black;
+        border-right: black;
+    }
+
+    textarea{
+        border:2px solid black;
+        border-top: black;
+        border-left: black;
+        border-right: black;
+        padding:20px 10px;
+        font-size: 20px;
+        color: rgb(63, 57, 57);
+        text-transform: capitalize;
+        font-family:Arial, Helvetica, sans-serif ;
+    }
+}
+
+input:active{
+    border-top: black;
+    border-left: black;
+    border-right: black;
+}
