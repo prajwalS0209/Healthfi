@@ -19,8 +19,11 @@ footer{
         width: 1px;
     }
     p{
+        display: flex;
         color: $text-color;
         font-size: 20px;
         text-transform: capitalize;
     }
+
+   
 }
