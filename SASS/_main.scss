@@ -270,8 +270,6 @@
         padding-bottom: 20px;
         padding-left:12px ;
         padding-right: 12px;
-        
-    
 
         p{
             color: $text-color;
@@ -304,7 +302,7 @@
     .anime{
         padding-left :30px;
         padding-top: 12px;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
     &_3{
         background-color: $bg-color2;
@@ -325,12 +323,11 @@
             line-height: 30px;
         }
 
-
     }
     &_4{
         background-color: $text-color;
         border-radius: 12px;
-       padding: 20px;
+        padding: 20px;
         height: 305px;
         width: 400px;
         margin-left: 20px;
